@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grey.ssm.school.dao.StudentDao">
+    <insert id="insert">
+        insert
+          into  student
+          (ID,stu_name,passwd,grade,age,qq,tele,email,college,subject)
+          values
+          (#{ID},#{stu_name},#{passwd},#{grade},#{age},#{qq},#{tele},#{email},#{college},#{subject})
+    </insert>
+    <select id="queryByID" parameterType="int" resultType="com.grey.ssm.school.model.Student">
+        select * from student where ID = #{ID}
+    </select>
+    <delete id="delete" parameterType="int">
+        delete from student where ID = #{ID}
+    </delete>
+    <update id="">
+    </update>
+</mapper>
