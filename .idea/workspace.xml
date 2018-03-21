@@ -10,189 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e82dfa00-266c-4f72-b673-cbd0c2ad7ad4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TeacherDao.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/activity.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/chapter.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/leave.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/lesson.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/login.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/order.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/student.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/teacher.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/activity.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/chaptered.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/chaptering.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/coment.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/helpme.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/helpothers.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/leave.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/left.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/lessoned.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/lessoning.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/order..jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/profile.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/repass.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/topic.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/teach/leave.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/teach/lesson.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/teach/login.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/teach/register.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/app.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/dropzone/dist/dropzone.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/140x140.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/404-bg.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar-150.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/avatar6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/bitbucket.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/dribbble.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/dropbox.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img1 (1).jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img10.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img11.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img12.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img7.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img8.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/gallery/img9.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/github.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/img1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/img11.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/img12.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/img2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/img3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/img4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/img5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/img6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/img7.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logo-fav.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logo-symbol.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logo-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logo-xx.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/mail_chimp.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/slack.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/img/user-profile-display.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/bootstrap-slider/bootstrap-slider.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/bootstrap-slider/css/bootstrap-slider.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/chartjs/Chart.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/countup/countUp.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-bs4/css/dataTables.bootstrap4.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-bs4/js/buttons.bootstrap4.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-bs4/js/buttons.colVis.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-bs4/js/buttons.flash.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-bs4/js/buttons.html5.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-bs4/js/buttons.print.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-bs4/js/dataTables.bootstrap4.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-bs4/js/dataTables.buttons.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-bs4/js/jquery.dataTables.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-buttons/js/buttons.colVis.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-buttons/js/buttons.flash.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-buttons/js/buttons.html5.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-buttons/js/buttons.print.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net-buttons/js/dataTables.buttons.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datatables/datatables.net/js/jquery.dataTables.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datetimepicker/css/bootstrap-datetimepicker.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/datetimepicker/js/bootstrap-datetimepicker.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/fuelux/js/wizard.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery-flot/jquery.flot.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery-flot/jquery.flot.pie.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery-flot/jquery.flot.resize.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery-flot/jquery.flot.time.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery-flot/plugins/curvedLines.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery-flot/plugins/jquery.flot.orderBars.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery-flot/plugins/jquery.flot.tooltip.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery-ui/jquery-ui.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.codemirror/addon/edit/matchbrackets.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.codemirror/lib/codemirror.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.codemirror/lib/codemirror.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.codemirror/mode/css/css.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.codemirror/mode/htmlmixed/htmlmixed.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.codemirror/mode/xml/xml.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.codemirror/theme/monokai.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.fullcalendar/fullcalendar.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.fullcalendar/fullcalendar.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.gritter/css/jquery.gritter.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.gritter/js/jquery.gritter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.magnific-popup/jquery.magnific-popup.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.magnific-popup/magnific-popup.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.maskedinput/jquery.maskedinput.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.nestable/jquery.nestable.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.niftymodals/dist/jquery.niftymodals.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.sparkline/jquery.sparkline.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.vectormap/jquery-jvectormap-1.2.2.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.vectormap/jquery-jvectormap-1.2.2.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.vectormap/maps/jquery-jvectormap-au-mill-en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.vectormap/maps/jquery-jvectormap-ca-lcc-en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.vectormap/maps/jquery-jvectormap-fr-merc-en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.vectormap/maps/jquery-jvectormap-in-mill-en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.vectormap/maps/jquery-jvectormap-map.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.vectormap/maps/jquery-jvectormap-uk-mill-en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.vectormap/maps/jquery-jvectormap-us-il-chicago-mill-en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jquery/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jqvmap/jquery.vmap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jqvmap/jquery.vmap.world.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jqvmap/jqvmap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/jqvmap/maps/jquery.vmap.world.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/masonry-layout/masonry.pkgd.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/material-design-icons/css/material-design-iconic-font.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/material-design-icons/fonts/Material-Design-Iconic-Font.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/moment.js/min/moment.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/morris/morris.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/morris/morris.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/morrisjs/morris.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/morrisjs/morris.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/multiselect/css/multi-select.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/multiselect/img/switch.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/multiselect/js/jquery.multi-select.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/parseley/parsley.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/perfect-scrollbar/css/perfect-scrollbar.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/prettify/prettify.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/quicksearch/jquery.quicksearch.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/raphael/raphael.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/roboto/Roboto-Bold.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/roboto/Roboto-BoldItalic.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/roboto/Roboto-Light.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/roboto/Roboto-Medium.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/roboto/Roboto-Regular.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/roboto/Roboto-RegularItalic.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/roboto/Roboto-Thin.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/select2/css/select2.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/select2/js/select2.full.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/select2/js/select2.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/summernote/font/summernote.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/summernote/summernote-bs4.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/summernote/summernote-bs4.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/assets/lib/summernote/summernote-ext-beagle.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/dao/StudentDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/dao/StudentDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/dao/TeacherDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/dao/TeacherDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/model/Student.java" afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/model/Student.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/model/Teacher.java" afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/model/Teacher.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/service/Impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/service/Impl/UserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/service/UserService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/web/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/school/web/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/login.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/register.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -244,7 +62,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/teach/login.jsp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="276">
-                  <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+                  <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
                   <folding />
                 </state>
               </provider>
@@ -254,7 +72,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/login.jsp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="828">
-                  <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+                  <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
                   <folding />
                 </state>
               </provider>
@@ -280,7 +98,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/teach/register.jsp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1265">
-                  <caret line="55" column="34" lean-forward="false" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+                  <caret line="65" column="34" lean-forward="false" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -312,11 +130,11 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/grey/ssm/school/model/Teacher.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="322">
-                  <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+                  <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
                   <folding>
-                    <element signature="e#347#348#0" expanded="true" />
-                    <element signature="e#387#388#0" expanded="true" />
-                    <element signature="e#419#420#0" expanded="true" />
+                    <element signature="e#708#709#0" expanded="true" />
+                    <element signature="e#748#749#0" expanded="true" />
+                    <element signature="e#780#781#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -1046,12 +864,20 @@
       <option name="presentableId" value="Default" />
       <updated>1521630405147</updated>
       <workItem from="1521630500922" duration="590000" />
-      <workItem from="1521640593903" duration="12720000" />
+      <workItem from="1521640593903" duration="12965000" />
     </task>
+    <task id="LOCAL-00001" summary="complete student register and login(all)">
+      <created>1521659991503</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521659991503</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110582000" />
+    <option name="totallyTimeSpent" value="110827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1456" extended-state="6" />
@@ -1126,7 +952,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="complete student register and login(Java)" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete student register and login(Java)" />
+    <MESSAGE value="complete student register and login(all)" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete student register and login(all)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1265,11 +1092,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grey/ssm/school/model/Teacher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
           <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1277,7 +1104,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
-          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+          <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1285,7 +1112,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/teach/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+          <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1293,7 +1120,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/teach/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1265">
-          <caret line="55" column="34" lean-forward="false" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+          <caret line="65" column="34" lean-forward="false" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
           <folding />
         </state>
       </provider>
