@@ -10,4 +10,6 @@ public interface UserService {
     Teacher queryTeachByID(int t_id);
 
     void insertStu(Student student);
+
+    void insertTeacher(Teacher teacher);
 }

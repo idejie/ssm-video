@@ -4,7 +4,7 @@ public class Student {
     private int id;
     private String stu_name;
     private String passwd;
-    private int grade;
+    private String grade;
     private int age;
     private int qq;
     private String tele;
@@ -15,7 +15,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(int id, String stu_name, String passwd, int grade,
+    public Student(int id, String stu_name, String passwd, String grade,
                    int age, int qq, String tele, String email,
                    String college, String subject) {
         this.id = id;
@@ -54,11 +54,11 @@ public class Student {
         this.passwd = passwd;
     }
 
-    public int getGrade() {
+    public String getGrade() {
         return grade;
     }
 
-    public void setGrade(int grade) {
+    public void setGrade(String grade) {
         this.grade = grade;
     }
 

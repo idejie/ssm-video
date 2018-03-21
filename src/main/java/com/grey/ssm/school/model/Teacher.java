@@ -8,11 +8,11 @@ public class Teacher {
     private String email;
     private String college;
     private String subject;
-
+    private String tele;
     public Teacher() {
     }
 
-    public Teacher(int id, String username, String passwd, int qq, String email, String college, String subject) {
+    public Teacher(int id, String username, String passwd, String tele, int qq, String email, String college, String subject) {
         this.id = id;
         this.username = username;
         this.passwd = passwd;
@@ -20,6 +20,15 @@ public class Teacher {
         this.email = email;
         this.college = college;
         this.subject = subject;
+        this.tele = tele;
+    }
+
+    public String getTele() {
+        return tele;
+    }
+
+    public void setTele(String tele) {
+        this.tele = tele;
     }
 
     public int getId() {

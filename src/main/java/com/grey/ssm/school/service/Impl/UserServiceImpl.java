@@ -23,11 +23,16 @@ public class UserServiceImpl implements UserService {
     }
 
     public Teacher queryTeachByID(int t_id) {
-        return null;
+        return teacherDao.queryByID(t_id);
     }
 
     public void insertStu(Student student) {
         stuDao.insert(student.getId(), student.getStu_name(), student.getPasswd(), student.getGrade(), student.getAge(),
                 student.getQq(), student.getTele(), student.getEmail(), student.getCollege(), student.getSubject());
+    }
+
+    public void insertTeacher(Teacher teacher) {
+        teacherDao.insert(teacher.getId(), teacher.getUsername(), teacher.getPasswd(), teacher.getQq(), teacher.getTele(),
+                teacher.getEmail(), teacher.getCollege(), teacher.getSubject());
     }
 }

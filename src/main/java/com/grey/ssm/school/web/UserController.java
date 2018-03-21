@@ -74,7 +74,7 @@ public class UserController {
         int stu_id = Integer.parseInt(req.getParameter("stu_id"));
         String stu_name = req.getParameter("stu_name");
         String passwd = req.getParameter("passwd");
-        int grade = Integer.parseInt(req.getParameter("grade"));
+        String grade = req.getParameter("grade");
         int age = Integer.parseInt(req.getParameter("age"));
         int qq = Integer.parseInt(req.getParameter("qq"));
         String tele = req.getParameter("tele");
@@ -100,6 +100,7 @@ public class UserController {
         }
     }
 
+    //教师登录
     @RequestMapping(value = "/teach/login", method = RequestMethod.GET)
     private void teachLoginPage(HttpServletRequest req, HttpServletResponse res) throws Exception {
         HttpSession session = req.getSession();
@@ -128,8 +129,46 @@ public class UserController {
                 res.sendRedirect("/teach/login");
             }
         } else {
-            session.setAttribute("error", "无此学生账号");
+            session.setAttribute("error", "无此教师账号");
             res.sendRedirect("/teach/login");
+        }
+    }
+
+    //教师注册
+    @RequestMapping(value = "/stu/register", method = RequestMethod.GET)
+    private void teachRegisterPage(HttpServletRequest req, HttpServletResponse res) throws Exception {
+        HttpSession session = req.getSession();
+        req.setAttribute("error", session.getAttribute("error"));
+        session.removeAttribute("error");
+        req.getRequestDispatcher(Constants.DIR_STU + "register.jsp").forward(req, res);
+    }
+
+    @RequestMapping(value = "/teach/register", method = RequestMethod.POST)
+    private void teachRegister(HttpServletRequest req, HttpServletResponse res) throws Exception {
+        int t_id = Integer.parseInt(req.getParameter("t_id"));
+        String t_name = req.getParameter("t_name");
+        String passwd = req.getParameter("passwd");
+        int qq = Integer.parseInt(req.getParameter("qq"));
+        String tele = req.getParameter("tele");
+        String email = req.getParameter("email");
+        String college = req.getParameter("college");
+        String subject = req.getParameter("subject");
+
+        HttpSession session = req.getSession();
+        Teacher havaTeacher = userService.queryTeachByID(t_id);
+        Teacher teacher = new Teacher(t_id, t_name, passwd, tele, qq, email, college, subject);
+        if (havaTeacher == null) {
+            userService.insertTeacher(teacher);
+            session.setAttribute("teacher", teacher);
+            String re_url = (String) session.getAttribute("re_url");
+            if (re_url != null) {
+                res.sendRedirect(re_url);
+            } else {
+                res.sendRedirect("/teach/profile/" + t_id);
+            }
+        } else {
+            session.setAttribute("error", "此教师账号已注册，请联系管理员");
+            res.sendRedirect("/teach/register");
         }
     }
 

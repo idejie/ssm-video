@@ -9,6 +9,6 @@ public interface StudentDao {
     void delete(@Param("ID") int id);
 
     void insert(@Param("ID") int id, @Param("stu_name") String stu_name, @Param("passwd") String passwd,
-                @Param("grade") int grade, @Param("age") int age, @Param("qq") int qq,
+                @Param("grade") String grade, @Param("age") int age, @Param("qq") int qq,
                 @Param("tele") String tele, @Param("email") String email, @Param("college") String college, @Param("subject") String subject);
 }
