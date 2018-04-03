@@ -16,6 +16,7 @@
     <delete id="delete" parameterType="int">
         delete from student where ID = #{ID}
     </delete>
-    <update id="">
+    <update id="updateStu">
+        update student set stu_name =#{stu_name},passwd = #{passwd},grade = #{grade},age = #{age},qq = #{qq},tele = #{tele},email = #{email},college = #{college},subject = #{subject} where stu_id = #{stu_id}
     </update>
 </mapper>

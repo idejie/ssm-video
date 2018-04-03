@@ -11,4 +11,8 @@ public interface StudentDao {
     void insert(@Param("ID") int id, @Param("stu_name") String stu_name, @Param("passwd") String passwd,
                 @Param("grade") String grade, @Param("age") int age, @Param("qq") int qq,
                 @Param("tele") String tele, @Param("email") String email, @Param("college") String college, @Param("subject") String subject);
+
+    void updateStu(@Param("ID") int stu_id,@Param("stu_name") String stu_name,@Param("passwd") String passwd,
+                    @Param("grade") String grade, @Param("age") int age, @Param("qq") int qq,
+                   @Param("tele") String tele, @Param("email") String email, @Param("college") String college, @Param("subject") String subject);
 }

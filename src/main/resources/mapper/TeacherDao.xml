@@ -11,8 +11,10 @@
     <select id="queryByID" parameterType="int" resultType="com.grey.ssm.school.model.Teacher">
         SELECT * FROM  teacher WHERE ID = #{ID}
     </select>
-    <delete id="">
+    <delete id="deleteByID" parameterType="int">
+        DELETE FROM teacher where ID = #{ID}
     </delete>
-    <update id="">
+    <update id="updateTeach">
+    update teahcer set username =#{username},passwd = #{passwd},qq = #{qq},tele = #{tele},email = #{email},college = #{college},subject = #{subject} where ID = #{ID}
     </update>
 </mapper>

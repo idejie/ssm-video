@@ -58,8 +58,6 @@
                                 <ul class="sub-menu">
                                     <li><a href="/stu/profile/${stu.id}">个人资料</a>
                                     </li>
-                                    <li><a href="/stu/repass">修改密码</a>
-                                    </li>
                                 </ul>
                             </li>
                             <li class="parent"><a href="charts.html"><i
@@ -121,8 +119,9 @@
 
         </div>
     </div>
-    <div class="be-content">
-        <div class="main-content container-fluid">
+</div>
+<div class="be-content">
+    <div class="main-content container-fluid">
             <div class="user-profile">
                 <div class="row">
                     <div class="col-md-12">
@@ -178,6 +177,8 @@
                 </div>
             </div>
         </div>
+</div>
+
         <script src="assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
         <script src="assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
         <script src="assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>

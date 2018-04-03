@@ -10,4 +10,9 @@ public interface TeacherDao {
                 @Param("passwd") String passwd, @Param("qq") int qq,
                 @Param("tele") String tele, @Param("email") String email,
                 @Param("college") String college, @Param("subject") String subject);
+
+    void updateTeach(@Param("ID") int id, @Param("username") String username,
+                @Param("passwd") String passwd, @Param("qq") int qq,
+                @Param("tele") String tele, @Param("email") String email,
+                @Param("college") String college, @Param("subject") String subject);
 }
