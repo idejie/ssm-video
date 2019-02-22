@@ -7,13 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ssm-BookAppointment" />
-        <module name="ssm-school" />
+        <module name="ssm-video" />
         <module name="ssm-wechat" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ssm-BookAppointment" target="1.5" />
-      <module name="ssm-school" target="1.5" />
+      <module name="ssm-video" target="1.5" />
       <module name="ssm-wechat" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.grey.ssm.video.dao.MyDao">
+
+    <select id="getUser" resultType="com.grey.ssm.video.model.User" parameterType="int">
+        select * from users where id = #{u_id}
+    </select>
+    <select id="getUserByName" resultType="com.grey.ssm.video.model.User" parameterType="String">
+        select * from users where username = #{username}
+    </select>
+    <insert id="addUser">
+        insert into users
+            (username,password)
+        values (#{username},#{password})
+    </insert>
+    <update id="updateUser">
+        update users set username =#{username},password=#{password} where id=#{u_id}
+    </update>
+
+    <select id="getVideo" resultType="com.grey.ssm.video.model.Video" parameterType="int">
+        select * from videos where v_id=#{v_id}
+    </select>
+    <select id="getAllVideo" resultType="java.util.List" parameterType="int">
+        select * from video where u_id=#{u_id}
+    </select>
+    <insert id="addVideo">
+        insert into videos
+            (u_id,is_full,location,title,descr)
+        values(#{u_id},#{is_full},#{location},#{title},#{descr})
+    </insert>
+    <update id="updateVideo">
+        update users set u_id=#{u_id},is_full=#{is_full},location=#{location},title=#{title},descr=#{descr}where v_id=#{v_id}
+    </update>
+    <delete id="delVideo">
+        delete from videos where v_id=#{v_id}
+    </delete>
+
+    <select id="getResource" resultType="com.grey.ssm.video.model.Resource" parameterType="int">
+        select * from resources where r_id=#{r_id}
+    </select>
+    <select id="getMyRes" resultType="java.util.List" parameterType="int">
+        select * from resources where v_id=#{v_id}
+    </select>
+    <insert id="addRes">
+        insert into resources
+            (v_id,pic_url,subtitle,style)
+        values (#{v_id},#{pic_url},#{subtitle},#{style})
+    </insert>
+    <update id="updateRes">
+        update resources set v_id=#{v_id},pic_url=#{pic_url},subtitle=#{subtitle},style={#style} where r_id=#{r_id}
+    </update>
+    <delete id="delRes">
+        delete from resources where r_id#{r_id}
+    </delete>
+</mapper>
