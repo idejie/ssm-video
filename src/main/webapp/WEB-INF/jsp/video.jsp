@@ -36,7 +36,6 @@
                             <div class="user-info">
                                 <div class="user-name">${user.username}</div>
                             </div>
-                            <a href="/account" class="dropdown-item"><span class="icon mdi mdi-face"></span>账号管理</a>
                             <a href="/logout" class="dropdown-item"><span class="icon mdi mdi-power"></span>登出</a>
                         </div>
                     </li>

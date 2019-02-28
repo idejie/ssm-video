@@ -9,6 +9,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class MyServiceImpl implements MyService {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -25,5 +27,21 @@ public class MyServiceImpl implements MyService {
     }
     public void addUser(String username,String password){
         myDao.addUser(username,password);
+    }
+
+    public List<User> getAllUsers() {
+        return myDao.getAllUsers();
+    }
+
+    public void delUser(int u_id) {
+        myDao.delUser(u_id);
+    }
+
+    public void yesUser(int u_id) {
+        myDao.yesUser(u_id);
+    }
+
+    public void noUser(int u_id) {
+        myDao.noUser(u_id);
     }
 }

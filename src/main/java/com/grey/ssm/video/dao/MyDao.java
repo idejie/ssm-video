@@ -8,11 +8,14 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface MyDao {
-
+    List<User> getAllUsers();
     User getUser(@Param("u_id") int u_id);
     User getUserByName(@Param("username")String username);
     void addUser(@Param("username") String username,@Param("password")String password);
     void updateUser(@Param("u_id") int u_id,@Param("username")String username,@Param("password")String password);
+    void delUser(@Param("u_id")int u_id);
+    void yesUser(@Param("u_id")int u_id);
+    void noUser(@Param("u_id")int u_id);
 
     Video getVideo(@Param("v_id") int v_id);
     List<Video> getAllVideo(@Param("u_id") int u_id);
@@ -25,6 +28,7 @@ public interface MyDao {
     void addRes(@Param("v_id") int v_id,@Param("pic_url") int pic_url,@Param("subtitle")String subtitle,@Param("style")String style);
     void updateRes(@Param("r_id") int r_id,@Param("v_id") int v_id,@Param("pic_url") int pic_url,@Param("subtitle")String subtitle,@Param("style")String style);
     void delRes(@Param("r_id")int r_id);
+
 
 }
 

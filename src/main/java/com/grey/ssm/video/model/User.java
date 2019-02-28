@@ -4,6 +4,7 @@ public class User {
     private int u_id;
     private String username;
     private String password;
+    private int permisson;
 
     public User() {
     }
@@ -13,10 +14,11 @@ public class User {
         this.password = password;
     }
 
-    public User(int u_id, String username, String password) {
+    public User(int u_id, String username, String password, int permisson) {
         this.u_id = u_id;
         this.username = username;
         this.password = password;
+        this.permisson = permisson;
     }
 
     public int getU_id() {
@@ -43,11 +45,20 @@ public class User {
         this.password = password;
     }
 
+    public int getPermisson() {
+        return permisson;
+    }
+
+    public void setPermisson(int permisson) {
+        this.permisson = permisson;
+    }
+
     public String toJSON() {
         return "{" +
                 "\"u_id\":\'" + u_id +"\',"+
                 "\"username\":\'" + username + "\'," +
                 "\"password\":\'" + password + "\'" +
+                "\"permisson\":\'" + permisson + "\'" +
                 "}";
     }
 }

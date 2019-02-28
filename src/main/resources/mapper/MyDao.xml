@@ -3,12 +3,15 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.grey.ssm.video.dao.MyDao">
+    <select id="getAllUsers" resultType="com.grey.ssm.video.model.User">
+        select * from users where users.username != 'admin'
+    </select>
 
     <select id="getUser" resultType="com.grey.ssm.video.model.User" parameterType="int">
-        select * from users where id = #{u_id}
+        select * from users where users.u_id = #{u_id}
     </select>
     <select id="getUserByName" resultType="com.grey.ssm.video.model.User" parameterType="String">
-        select * from users where username = #{username}
+        select * from users where users.username = #{username}
     </select>
     <insert id="addUser">
         insert into users
@@ -16,13 +19,22 @@
         values (#{username},#{password})
     </insert>
     <update id="updateUser">
-        update users set username =#{username},password=#{password} where id=#{u_id}
+        update users set username =#{username},password=#{password} where users.u_id=#{u_id}
     </update>
+    <update id="yesUser">
+        update users set users.permisson=1 where users.u_id=#{u_id}
+    </update>
+    <update id="noUser">
+        update users set users.permisson=0 where users.u_id=#{u_id}
+    </update>
+    <delete id="delUser">
+        delete from users where users.u_id = #{u_id}
+    </delete>
 
     <select id="getVideo" resultType="com.grey.ssm.video.model.Video" parameterType="int">
         select * from videos where v_id=#{v_id}
     </select>
-    <select id="getAllVideo" resultType="java.util.List" parameterType="int">
+    <select id="getAllVideo" resultType="com.grey.ssm.video.model.Video" parameterType="int">
         select * from video where u_id=#{u_id}
     </select>
     <insert id="addVideo">
