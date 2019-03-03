@@ -35,12 +35,15 @@
         select * from videos where v_id=#{v_id}
     </select>
     <select id="getAllVideo" resultType="com.grey.ssm.video.model.Video" parameterType="int">
-        select * from video where u_id=#{u_id}
+        select * from videos where u_id=#{u_id}
     </select>
     <insert id="addVideo">
         insert into videos
             (u_id,is_full,location,title,descr)
         values(#{u_id},#{is_full},#{location},#{title},#{descr})
+    </insert>
+    <insert id="newVideo">
+        insert into videos (u_id,is_full) values(#{u_id},0)
     </insert>
     <update id="updateVideo">
         update users set u_id=#{u_id},is_full=#{is_full},location=#{location},title=#{title},descr=#{descr}where v_id=#{v_id}

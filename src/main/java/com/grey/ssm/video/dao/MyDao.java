@@ -30,5 +30,6 @@ public interface MyDao {
     void delRes(@Param("r_id")int r_id);
 
 
+    void newVideo(@Param("u_id")int u_id);
 }
 

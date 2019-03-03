@@ -145,30 +145,7 @@
                                     <label for="pic" class="col-12 col-sm-3 col-form-label text-sm-right">搜索图片</label>
                                     <div class="col-8 col-sm-8 col-lg-6 dropdown">
 
-                                        <a  data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle btn btn-space btn-primary" id="pic" >去搜索</a>
-                                        <ul class="dropdown-menu be-connections">
-                                            <li>
-                                                <div class="list">
-                                                    <div class="content">
-                                                        <div class="row">
-                                                            <input id="pic_word" type="text" placeholder="关键词" class="form-control">
-                                                            <button data-dismiss="modal" type="submit" class="btn btn-primary btn-xl">搜索</button>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col"><a href="#" class="connection-item"><img src="assets/img/github.png" alt="Github"><span>GitHub</span></a></div>
-                                                            <div class="col"><a href="#" class="connection-item"><img src="assets/img/bitbucket.png" alt="Bitbucket"><span>Bitbucket</span></a></div>
-                                                            <div class="col"><a href="#" class="connection-item"><img src="assets/img/slack.png" alt="Slack"><span>Slack</span></a></div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col"><a href="#" class="connection-item"><img src="assets/img/dribbble.png" alt="Dribbble"><span>Dribbble</span></a></div>
-                                                            <div class="col"><a href="#" class="connection-item"><img src="assets/img/mail_chimp.png" alt="Mail Chimp"><span>Mail Chimp</span></a></div>
-                                                            <div class="col"><a href="#" class="connection-item"><img src="assets/img/dropbox.png" alt="Dropbox"><span>Dropbox</span></a></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="footer"> <a href="#">更多</a></div>
-                                            </li>
-                                        </ul>
+                                        <a   role="button" aria-expanded="false" class="btn btn-space btn-primary" href =  id="pic" >去搜索</a>
                                     </div>
                                 </div>
                                 <div class="form-group row">

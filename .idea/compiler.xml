@@ -13,7 +13,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ssm-BookAppointment" target="1.5" />
-      <module name="ssm-video" target="1.5" />
+      <module name="ssm-video" target="7" />
       <module name="ssm-wechat" target="1.5" />
     </bytecodeTargetLevel>
   </component>

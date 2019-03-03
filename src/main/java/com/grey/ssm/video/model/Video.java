@@ -7,6 +7,28 @@ public class Video {
     private String location;
     private String title;
     private String descr;
+    private String cover;
+
+    public Video(int v_id, int u_id, int is_full, String location, String title, String descr, String cover) {
+        this.v_id = v_id;
+        this.u_id = u_id;
+        this.is_full = is_full;
+        this.location = location;
+        this.title = title;
+        this.descr = descr;
+        this.cover = cover;
+    }
+
+    public Video() {
+    }
+
+    public String getCover() {
+        return cover;
+    }
+
+    public void setCover(String cover) {
+        this.cover = cover;
+    }
 
     public String getTitle() {
         return title;
@@ -64,6 +86,7 @@ public class Video {
                 "\"location\":\'" + location +"\',"+
                 "\"title\":\'" + title +"\',"+
                 "\"descr\":\'" + descr+"\',"+
+                "\"cover\":\'" + cover+"\',"+
                 "}";
     }
 }

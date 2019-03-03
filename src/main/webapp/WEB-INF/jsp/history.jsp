@@ -29,7 +29,7 @@
             <div class="be-right-navbar">
                 <ul class="nav navbar-nav float-right be-user-nav">
                     <li class="nav-item dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
-                                                     class="nav-link dropdown-toggle"><img src="assets/img/avatar.png"
+                                                     class="nav-link dropdown-toggle"><img src="/assets/img/avatar.png"
                                                                                            alt="Avatar"><span
                             class="user-name">Túpac Amaru</span></a>
                         <div role="menu" class="dropdown-menu">
@@ -71,101 +71,26 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
+                                    <c:forEach var="v" items="${videos}">
+                                        <tr>
 
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>0324</span></td>
-                                        <td class="cell-detail"><span>视频标题</span></td>
-                                        <td class="cell-detail"><span>这里是视频的描述</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
+                                            <td class="cell-detail"><img src="/assets/${v.cover}" alt="Avatar"></td>
+                                            <td class="cell-detail"><span>${v.v_id}</span></td>
+                                            <td class="cell-detail"><span>${v.title}</span></td>
+                                            <td class="cell-detail"><span>${v.descr}</span></td>
+                                            <td class="text-right">
+                                                <div class="btn-group btn-hspace">
+                                                    <button type="button" data-toggle="dropdown"
+                                                            class="btn btn-secondary dropdown-toggle">操作 <span
+                                                            class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                                                    <div role="menu" class="dropdown-menu">
+                                                        <a href="/del-video/${v.v_id}" class="dropdown-item">删除</a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>
 
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>0324</span></td>
-                                        <td class="cell-detail"><span>视频标题</span></td>
-                                        <td class="cell-detail"><span>这里是视频的描述</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>0324</span></td>
-                                        <td class="cell-detail"><span>视频标题</span></td>
-                                        <td class="cell-detail"><span>这里是视频的描述</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>0324</span></td>
-                                        <td class="cell-detail"><span>视频标题</span></td>
-                                        <td class="cell-detail"><span>这里是视频的描述</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>0324</span></td>
-                                        <td class="cell-detail"><span>视频标题</span></td>
-                                        <td class="cell-detail"><span>这里是视频的描述</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -175,7 +100,7 @@
                 <div class="col-sm-12">
                     <div class="card card-table">
                         <div class="card-header">正在制作的视频
-                            <div class="tools dropdown">><a href="/add-video" class="icon mdi mdi-plus">制作新视频</a>
+                            <div class="tools dropdown">><a href="/add-video/${user.u_id}" class="icon mdi mdi-plus">制作新视频</a>
                             </div>
                         </div>
                         <div class="card-body">
@@ -191,101 +116,27 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
+                                    <c:forEach var="v" items="${videos2}">
+                                        <tr>
 
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>0324</span></td>
-                                        <td class="cell-detail"><span>视频标题</span></td>
-                                        <td class="cell-detail"><span>这里是视频的描述</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
+                                            <td class="cell-detail"><img src="/assets/${v.cover}" alt="Avatar"></td>
+                                            <td class="cell-detail"><span>${v.v_id}</span></td>
+                                            <td class="cell-detail"><span>${v.title}</span></td>
+                                            <td class="cell-detail"><span>${v.descr}</span></td>
+                                            <td class="text-right">
+                                                <div class="btn-group btn-hspace">
+                                                    <button type="button" data-toggle="dropdown"
+                                                            class="btn btn-secondary dropdown-toggle">操作 <span
+                                                            class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                                                    <div role="menu" class="dropdown-menu"><a href="/edit-video/${v.v_id}"
+                                                                                              class="dropdown-item">编辑</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a href="/del-video/${v.v_id}" class="dropdown-item">删除</a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>0324</span></td>
-                                        <td class="cell-detail"><span>视频标题</span></td>
-                                        <td class="cell-detail"><span>这里是视频的描述</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>0324</span></td>
-                                        <td class="cell-detail"><span>视频标题</span></td>
-                                        <td class="cell-detail"><span>这里是视频的描述</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>0324</span></td>
-                                        <td class="cell-detail"><span>视频标题</span></td>
-                                        <td class="cell-detail"><span>这里是视频的描述</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>0324</span></td>
-                                        <td class="cell-detail"><span>视频标题</span></td>
-                                        <td class="cell-detail"><span>这里是视频的描述</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>
                                     </tbody>
                                 </table>
                             </div>
