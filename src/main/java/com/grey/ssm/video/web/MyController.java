@@ -1,11 +1,13 @@
 package com.grey.ssm.video.web;
 
+import com.alibaba.fastjson.JSONObject;
 import com.grey.ssm.video.DoGET;
 import com.grey.ssm.video.model.Resource;
 import com.grey.ssm.video.model.User;
 import com.grey.ssm.video.model.Video;
 import com.grey.ssm.video.service.MyService;
 import com.grey.ssm.video.utils.Constants;
+import org.apache.commons.io.FilenameUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,13 +15,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -44,7 +50,6 @@ public class MyController {
     private void start(HttpServletRequest req, HttpServletResponse res) throws Exception {
         HttpSession session = req.getSession();
         User user = (User) session.getAttribute("user");
-        getPic("枸杞");
         if (user == null) {
             req.getRequestDispatcher(Constants.DIR_HOME + "login.jsp").forward(req, res);
         } else {
@@ -312,6 +317,7 @@ public class MyController {
     private void detailVideo(@PathVariable("v_id") int v_id, HttpServletRequest req, HttpServletResponse res) throws Exception {
         Video v = myService.getVideo(v_id);
         User user = myService.getUserByID(v.getU_id());
+        System.out.println(user.toJSON());
         List<Resource> resources = myService.getRes(v_id);
         req.setAttribute("video", v);
         req.setAttribute("user", user);
@@ -341,8 +347,92 @@ public class MyController {
     //视频更新
 
     //选择图片
+    @RequestMapping(value = "/v/{v_id}/add-pic",method = RequestMethod.GET)
+    private void addPic(@PathVariable("v_id") int v_id,HttpServletRequest req, HttpServletResponse res) throws Exception {
+
+
+        String keyword = req.getParameter("keyword");
+        Video v = myService.getVideo(v_id);
+//        String password = req.getParameter("password");
+//        System.out.println(keyword+"###########");
+        String url = "http://image.so.com/j?q="+keyword+"&src=srp&pn=100";
+        List<String> pics = DoGET.getPic(url);
+        req.setAttribute("video",v);
+        req.setAttribute("user",myService.getUserByID(v.getU_id()));
+        req.setAttribute("pics",pics);
+        req.getRequestDispatcher(Constants.DIR_HOME + "pic.jsp").forward(req, res);
+//        session.removeAttribute("user");
+//        req.getRequestDispatcher(Constants.DIR_HOME + "video.jsp").forward(req, res);
+
+
+    }
+    //选择图片
+    @RequestMapping(value = "/v/{v_id}/add-pic/",method = RequestMethod.POST)
+    private void addPicAction(@PathVariable("v_id") int v_id,HttpServletRequest req, HttpServletResponse res) throws Exception {
+
+
+        String pic = req.getParameter("pic");
+
+        Video v = myService.getVideo(v_id);
+        System.out.println(v.toJSON());
+        User u = myService.getUserByID(v.getU_id());
+        req.setAttribute("chosen_pic",pic);
+        req.setAttribute("user",u);
+        req.setAttribute("video",v);
+        List<Resource> resources = myService.getRes(v_id);
+        req.setAttribute("res", resources);
+        req.getRequestDispatcher(Constants.DIR_HOME+"video.jsp").forward(req,res);
+
+
+    }
 
     //生成素材
+    @RequestMapping(value = "/v/{v_id}/add-res",method = RequestMethod.GET)
+    private void addRes(@PathVariable("v_id") int v_id,HttpServletRequest req, HttpServletResponse res) throws Exception {
+
+
+        String pic = req.getParameter("chosen_pic");
+        String subtitle = req.getParameter("subtitle").replace("\r\n","<br>");
+        String start_time = req.getParameter("start_time");
+        String end_time = req.getParameter("end_time");
+
+        System.out.println(subtitle+"    333333333");
+        Video v = myService.getVideo(v_id);
+        User u = myService.getUserByID(v.getU_id());
+        myService.addRes(v_id,pic,subtitle,start_time,end_time);;
+        req.setAttribute("user",u);
+        req.setAttribute("video",v);
+        List<Resource> resources = myService.getRes(v_id);
+        req.setAttribute("res", resources);
+        req.getRequestDispatcher(Constants.DIR_HOME+"video.jsp").forward(req,res);
+
+
+    }
+    //生成素材
+    @RequestMapping(value = "/v/{v_id}/add-music",method = RequestMethod.POST)
+    private void addMusic(@PathVariable("v_id") int v_id,HttpServletRequest req, HttpServletResponse res,@RequestParam(value="music",required=false)MultipartFile attachs) throws Exception {
+
+//        String file = req.getParameter("music");
+        System.out.println("file:###"+attachs.getOriginalFilename());
+
+        //获取源文件名
+        String oldName= attachs.getOriginalFilename();
+        //获取源文件名后缀
+        String prefixName = FilenameUtils.getExtension(oldName);
+//        String contentType=file.getContentType();	//获取文件类型（后缀）
+//        //因为获取的后缀是XXXX/xxx形式
+//        contentType=contentType.substring(contentType.indexOf("/")+1);
+//        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        filename = v_id+"-"+df.format(new Date());
+//        System.out.println(filename);
+//        String url = req.getSession().getServletContext().getRealPath("/userhead");
+//        System.out.println(url);
+//        url=url+"/";
+//        file.transferTo(new File(url+filename));//保存图片
+
+
+
+    }
 
 
     //更新素材

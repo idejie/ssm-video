@@ -63,71 +63,36 @@
                                 <table class="table table-striped table-hover">
                                     <thead>
                                     <tr>
+                                        <th style="width:10%;">r_id</th>
                                         <th style="width:20%;">图片</th>
                                         <th style="width:50%;">台词</th>
-                                        <th style="width:10%;">开始时间</th>
-                                        <th style="width:10%;">结束时间</th>
+                                        <th style="width:10%;">style</th>
+
                                         <th style="width:10%;"></th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
+                                    <c:forEach var="r" items="${res}">
+                                        <tr>
+                                            <td class="cell-detail"><span>${r.r_id}</span></td>
 
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>这里是台词</span></td>
-                                        <td class="cell-detail"><span>00:00</span></td>
-                                        <td class="cell-detail"><span>10:25</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
+                                            <td class="cell-detail"><img src="${r.pic_url}" alt="Avatar"
+                                                                         style="width: 80px;height: 40px"></td>
+                                            <td class="cell-detail"><span>${r.subtitle}</span></td>
+                                            <td class="cell-detail"><span>${r.style}</span></td>
 
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>这里是台词</span></td>
-                                        <td class="cell-detail"><span>10:26</span></td>
-                                        <td class="cell-detail"><span>20:25</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
+                                            <td class="text-right">
+                                                <div class="btn-group btn-hspace">
+                                                    <button type="button" data-toggle="dropdown"
+                                                            class="btn btn-secondary dropdown-toggle">操作 <span
+                                                            class="icon-dropdown mdi mdi-chevron-down"></span></button>
+                                                    <div role="menu" class="dropdown-menu">
+                                                        <a href="/del-res/${r_id}" class="dropdown-item">删除</a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td class="cell-detail"><img src="assets/img/avatar6.png" alt="Avatar"></td>
-                                        <td class="cell-detail"><span>这里是台词</span></td>
-                                        <td class="cell-detail"><span>20:26</span></td>
-                                        <td class="cell-detail"><span>30:00</span></td>
-                                        <td class="text-right">
-                                            <div class="btn-group btn-hspace">
-                                                <button type="button" data-toggle="dropdown"
-                                                        class="btn btn-secondary dropdown-toggle">操作 <span
-                                                        class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                <div role="menu" class="dropdown-menu"><a href="#"
-                                                                                          class="dropdown-item">编辑</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="#" class="dropdown-item">删除</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>
 
                                     </tbody>
                                 </table>
@@ -140,51 +105,111 @@
                 <div class="col-md-12">
                     <div class="card card-border-color card-border-color-primary">
                         <div class="card-header card-header-divider">添加一条素材
-                            <form>
-                                <div class="form-group row">
-                                    <label for="pic" class="col-12 col-sm-3 col-form-label text-sm-right">搜索图片</label>
-                                    <div class="col-8 col-sm-8 col-lg-6 dropdown">
 
-                                        <a   role="button" aria-expanded="false" class="btn btn-space btn-primary" href =  id="pic" >去搜索</a>
-                                    </div>
-                                </div>
+
+                            <c:choose>
+                            <c:when test="${not empty chosen_pic}">
+                            <form action="/v/${video.v_id}/add-res" method="get">
                                 <div class="form-group row">
-                                    <label for="inputPassword3" class="col-12 col-sm-3 col-form-label text-sm-right">台词</label>
+                                    <label class="col-12 col-sm-3 col-form-label text-sm-right">图片</label>
                                     <div class="col-12 col-sm-8 col-lg-6">
-                                        <textarea id="inputPassword3" type="text" class="form-control"></textarea>
+                                        <input name="chosen_pic" style="width: 0px;height: 0px;" value="${chosen_pic}">
+                                        <span class="custom-control-label"><img src="${chosen_pic}"
+                                                                                style="width: 80px;height: 40px"></span>
                                     </div>
                                 </div>
+                                </c:when>
+                                <c:otherwise>
                                 <div class="form-group row">
-                                    <label for="inputPlaceholder3" class="col-12 col-sm-3 col-form-label text-sm-right">开始时间</label>
-                                    <div class="col-12 col-sm-8 col-lg-6">
-                                        <input id="inputPlaceholder3" type="text" placeholder="" class="form-control">
+                                    <label class="col-12 col-sm-3 col-form-label text-sm-right">搜索图片</label>
+                                    <div class="col-8 col-sm-8 col-lg-6 dropdown">
+                                        <form action="/v/${video.v_id}/add-pic" method="get">
+                                            <div class="form-group">
+                                                <input id="keyword" type="text" placeholder="Keyword" autocomplete="off"
+                                                       class="form-control" name="keyword">
+                                            </div>
+                                            <div class="form-group login-submit">
+                                                <button data-dismiss="modal" type="submit"
+                                                        class="btn btn-primary btn-xl">搜索
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="inputDisabled3" class="col-12 col-sm-3 col-form-label text-sm-right">结束时间</label>
-                                    <div class="col-12 col-sm-8 col-lg-6">
-                                        <input id="inputDisabled3" type="text" placeholder="" class="form-control">
+                                <form>
+                                    </c:otherwise>
+                                    </c:choose>
+
+
+                                    <div class="form-group row">
+                                        <label for="inputPassword3"
+                                               class="col-12 col-sm-3 col-form-label text-sm-right">台词</label>
+                                        <div class="col-12 col-sm-8 col-lg-6">
+                                            <textarea id="inputPassword3" type="text" class="form-control"
+                                                      name="subtitle"></textarea>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
+                                    <div class="form-group row">
+                                        <label for="inputPlaceholder3"
+                                               class="col-12 col-sm-3 col-form-label text-sm-right">开始时间</label>
+                                        <div class="col-12 col-sm-8 col-lg-6">
+                                            <input id="inputPlaceholder3" type="text" placeholder=""
+                                                   class="form-control" name="start_time">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputDisabled3"
+                                               class="col-12 col-sm-3 col-form-label text-sm-right">结束时间</label>
+                                        <div class="col-12 col-sm-8 col-lg-6">
+                                            <input id="inputDisabled3" type="text" placeholder="" class="form-control"
+                                                   name="end_time">
+                                        </div>
+                                    </div>
+                                    <button data-dismiss="modal" type="submit" class="btn btn-primary btn-xl">确定
+                                    </button>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-border-color card-border-color-primary">
+                        <div class="card-header card-header-divider">添加背景音乐
+                            <div class="card-body">
+                                <form action="/v/${video.v_id}/add-music" method="post" enctype="multipart/form-data">
+                                    <div class="form-group row">
+                                        <label for="file-1" class="col-12 col-sm-3 col-form-label text-sm-right">Button
+                                            File Input</label>
+                                        <div class="col-12 col-sm-6">
+                                            <input id="file-1" type="file" name="music"
+                                                   data-multiple-caption="{count} files selected" multiple=""
+                                                   class="inputfile">
+                                            <label for="file-1" class="btn-secondary"> <i
+                                                    class="mdi mdi-upload"></i><span>上传音乐</span></label>
+                                        </div>
+                                    </div>
+                                    <button data-dismiss="modal" type="submit" class="btn btn-primary btn-xl">开始生成
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
+    <script src="/assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="/assets/js/app.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //initialize the javascript
+            App.init();
+        });
 
-</div>
-<script src="/assets/lib/jquery/jquery.min.js" type="text/javascript"></script>
-<script src="/assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
-<script src="/assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-<script src="/assets/js/app.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        //initialize the javascript
-        App.init();
-    });
-
-</script>
+    </script>
 </body>
 </html>

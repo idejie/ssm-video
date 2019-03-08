@@ -25,7 +25,7 @@ public interface MyDao {
 
     Resource getResource(@Param("r_id")int r_id);
     List<Resource> getMyRes(@Param("v_id")int v_id);
-    void addRes(@Param("v_id") int v_id,@Param("pic_url") int pic_url,@Param("subtitle")String subtitle,@Param("style")String style);
+    void addRes(@Param("v_id") int v_id,@Param("pic_url") String pic_url,@Param("subtitle")String subtitle,@Param("style")String style);
     void updateRes(@Param("r_id") int r_id,@Param("v_id") int v_id,@Param("pic_url") int pic_url,@Param("subtitle")String subtitle,@Param("style")String style);
     void delRes(@Param("r_id")int r_id);
 

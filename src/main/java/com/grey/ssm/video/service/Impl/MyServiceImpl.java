@@ -66,4 +66,9 @@ public class MyServiceImpl implements MyService {
     public List<Resource> getRes(int v_id) {
         return myDao.getMyRes(v_id);
     }
+
+    @Override
+    public void addRes(int v_id, String pic, String subtitle, String start_time, String end_time) {
+        myDao.addRes(v_id,pic,subtitle,"{\"start_time\":\""+start_time+"\", \"end_time\":\""+end_time+"\"}");
+    }
 }

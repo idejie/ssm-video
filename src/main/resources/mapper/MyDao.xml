@@ -55,7 +55,7 @@
     <select id="getResource" resultType="com.grey.ssm.video.model.Resource" parameterType="int">
         select * from resources where r_id=#{r_id}
     </select>
-    <select id="getMyRes" resultType="java.util.List" parameterType="int">
+    <select id="getMyRes" resultType="com.grey.ssm.video.model.Resource" parameterType="int">
         select * from resources where v_id=#{v_id}
     </select>
     <insert id="addRes">
