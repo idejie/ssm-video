@@ -10,72 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e82dfa00-266c-4f72-b673-cbd0c2ad7ad4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/audio/audio.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/bin/ffmpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/bin/ffplay" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/bin/ffprobe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/developer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/faq.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/fate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffmpeg-all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffmpeg-bitstream-filters.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffmpeg-codecs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffmpeg-devices.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffmpeg-filters.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffmpeg-formats.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffmpeg-protocols.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffmpeg-resampler.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffmpeg-scaler.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffmpeg-utils.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffmpeg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffplay-all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffplay.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffprobe-all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/ffprobe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/general.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/git-howto.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/libavcodec.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/libavdevice.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/libavfilter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/libavformat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/libavutil.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/libswresample.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/libswscale.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/mailing-list-faq.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/nut.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/platform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/doc/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/presets/ffprobe.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/presets/libvpx-1080p.ffpreset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/presets/libvpx-1080p50_60.ffpreset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/presets/libvpx-360p.ffpreset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/presets/libvpx-720p.ffpreset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/presets/libvpx-720p50_60.ffpreset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/tmp/img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/tmp/img2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/tmp/img3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/tmp/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/tmp/keyword.ass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/tmp/keyword.srt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/tmp/out.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/tmp/outfile.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/tmp/output.mkv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/tmp/output.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/ffmpeg/tmp/output2.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/model/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/dao/MyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/dao/MyDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/service/Impl/MyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/service/Impl/MyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/service/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/service/MyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/web/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/web/MyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/MyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/MyDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/history.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/history.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/users/github.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,10 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/grey/ssm/video/web/MyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="395">
               <caret line="504" lean-forward="true" selection-start-line="504" selection-end-line="504" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -145,29 +81,6 @@
               <caret line="36" column="8" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/grey/ssm/video/model/Music.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-              <folding>
-                <element signature="e#150#151#0" expanded="true" />
-                <element signature="e#177#178#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
-                <element signature="e#246#247#0" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#494#495#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -222,8 +135,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="204" column="19" selection-start-line="204" selection-start-column="19" selection-end-line="204" selection-end-column="19" />
+            <state relative-caret-position="345">
+              <caret line="23" column="41" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -270,7 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/left.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/lessoned.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/lessoning.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/stu/chaptering.jsp" />
@@ -321,6 +242,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/history.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/service/Impl/MyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/grey/ssm/video/web/MyController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -423,125 +345,6 @@
               <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
               <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="video" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="video" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="video" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="video" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="Impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="video" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm-video" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm-video" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -626,7 +429,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552226197919" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552229151402" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -881,7 +684,7 @@
       <workItem from="1551508545035" duration="3739000" />
       <workItem from="1551576962460" duration="4764000" />
       <workItem from="1551592859197" duration="3950000" />
-      <workItem from="1551974792719" duration="21181000" />
+      <workItem from="1551974792719" duration="22250000" />
     </task>
     <task id="LOCAL-00001" summary="complete student register and login(all)">
       <created>1521659991503</created>
@@ -894,13 +697,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166770000" />
+    <option name="totallyTimeSpent" value="167839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4904762" visible="true" weight="0.24725275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4904762" visible="true" weight="0.24725275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -910,7 +713,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39874738" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -920,7 +723,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49841017" weight="0.32776618" />
       <window_info anchor="bottom" id="Spring" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.28183717" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32142857" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32142857" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
@@ -1041,7 +844,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/login.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/teacher.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grey/ssm/video/model/Student.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/logo-fav.png">
@@ -1296,13 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="204" column="19" selection-start-line="204" selection-start-column="19" selection-end-line="204" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/users/47-20190309193551.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1406,11 +1201,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/grey/ssm/video/web/MyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="395">
           <caret line="504" lean-forward="true" selection-start-line="504" selection-end-line="504" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
