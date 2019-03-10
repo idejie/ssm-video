@@ -128,7 +128,7 @@
                                                     <button type="button" data-toggle="dropdown"
                                                             class="btn btn-secondary dropdown-toggle">操作 <span
                                                             class="icon-dropdown mdi mdi-chevron-down"></span></button>
-                                                    <div role="menu" class="dropdown-menu"><a href="/edit-video/${v.v_id}"
+                                                    <div role="menu" class="dropdown-menu"><a href="/v/${v.v_id}"
                                                                                               class="dropdown-item">编辑</a>
                                                         <div class="dropdown-divider"></div>
                                                         <a href="/del-video/${v.v_id}" class="dropdown-item">删除</a>

@@ -1,0 +1,4 @@
+file 'http://img3.makepolo.net/img3/745/528/100004774528_14114385531354.jpg'
+duration 5
+file 'http://img2.makepolo.net/images/formals/img/product/324/586/091454528f4cba1df04e9ed5d83f4ede.jpg'
+duration 5

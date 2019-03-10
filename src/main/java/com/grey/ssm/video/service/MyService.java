@@ -30,4 +30,8 @@ public interface MyService {
     List<Resource> getRes(int v_id);
 
     void addRes(int v_id, String pic, String subtitle, String start_time, String end_time);
+
+    void addMusic(int v_id, String filename);
+
+    void finishVideo(int v_id);
 }

@@ -21,7 +21,10 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.File;
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -419,18 +422,104 @@ public class MyController {
         String oldName= attachs.getOriginalFilename();
         //获取源文件名后缀
         String prefixName = FilenameUtils.getExtension(oldName);
-//        String contentType=file.getContentType();	//获取文件类型（后缀）
-//        //因为获取的后缀是XXXX/xxx形式
-//        contentType=contentType.substring(contentType.indexOf("/")+1);
-//        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//        filename = v_id+"-"+df.format(new Date());
-//        System.out.println(filename);
-//        String url = req.getSession().getServletContext().getRealPath("/userhead");
-//        System.out.println(url);
-//        url=url+"/";
-//        file.transferTo(new File(url+filename));//保存图片
+        SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");
+
+        String filename = v_id+"-"+df.format(new Date())+"."+prefixName;
+        //创建新的文件，用于接收用户上传的文件流
+        File targetFile = new File(Constants.path, filename);
+        if(!targetFile.exists()){
+            targetFile.mkdirs();
+        }else {
+            targetFile.delete();
+        }
+        //将上传的文件保存
+        try {
+            attachs.transferTo(targetFile);
+            System.out.println("success");
+            //开始制作视频
+            //下载图片并编辑台词
+            List<Resource> resources = myService.getRes(v_id);
+            String input_txt = "";
+            String subtitle_txt = Constants.subtitle_head;
+            for(Resource r:resources){
+                String imgUrl = r.getPic_url();
+                JSONObject jsonObject = (JSONObject) JSONObject.parse(r.getStyle());
+                String subtitle = r.getSubtitle().replace("<br>","\n");
+                String[] start_time = jsonObject.getString("start_time").split(":");
+                String[] end_time = jsonObject.getString("end_time").split(":");
+                System.out.println("starttime:"+start_time);
+                System.out.println("endtime:"+end_time);
+                System.out.println("subtile:"+subtitle);
+                //图片url中的前面部分：例如"http://images.csdn.net/"
+                String beforeUrl = imgUrl.substring(0,imgUrl.lastIndexOf("/")+1);
+                //图片url中的后面部分：例如“20150529/PP6A7429_副本1.jpg”
+                String fileName = imgUrl.substring(imgUrl.lastIndexOf("/")+1);
+                //编码之后的fileName，空格会变成字符"+"
+                String newFileName = URLEncoder.encode(fileName, "UTF-8");
+                //把编码之后的fileName中的字符"+"，替换为UTF-8中的空格表示："%20"
+                newFileName = newFileName.replaceAll("\\+", "\\%20");
+                //编码之后的url
+                imgUrl = beforeUrl + newFileName;
+                //创建文件目录
+//                String[] filenames = newFileName.split(".");
+//                System.out.println(filenames[0]);
+//                String dest_file =Constants.path+"/"+v_id+"-"+r.getR_id()+".jpg";
+                File files = new File(Constants.path,v_id+"-"+r.getR_id()+".jpg");
+//                if (!files.exists()) {
+//                    files.mkdirs();
+//                }else {
+//                    files.delete();
+//                }
+                //获取下载地址
+                URL url = new URL(imgUrl);
+                //链接网络地址
+                HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+                //获取链接的输出流
+                InputStream is = connection.getInputStream();
+                //创建文件，fileName为编码之前的文件名
+//                File file = new File(dest_file);
+                //根据输入流写入文件
+                FileOutputStream out = new FileOutputStream(files);
+                int i = 0;
+                while((i = is.read()) != -1){
+                    out.write(i);
+                }
+                out.close();
+                is.close();
+
+            }
 
 
+            String command = Constants.ffmpeg+
+                    " -i "+Constants.path+"/"+v_id+"-input.txt " +
+                    "-i "+Constants.path+"/"+filename+
+                    " "+Constants.path+"/"+v_id+".mp4";
+            Process p = Runtime.getRuntime().exec(command);
+            //读取命令的输出信息
+            InputStream is = p.getInputStream();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            p.waitFor();
+            if (p.exitValue() != 0) {
+                System.out.println("error");
+//                res.sendRedirect("/history/"+myService.getVideo(v_id).getU_id());
+
+//                return;
+            }
+            myService.finishVideo(v_id);
+
+            //打印输出信息
+            String s = null;
+            while ((s = reader.readLine()) != null) {
+                System.out.println(s);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return;
+
+        }
+
+        res.sendRedirect("/history/"+myService.getVideo(v_id).getU_id());
 
     }
 

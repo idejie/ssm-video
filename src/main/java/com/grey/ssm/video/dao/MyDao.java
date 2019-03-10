@@ -31,5 +31,9 @@ public interface MyDao {
 
 
     void newVideo(@Param("u_id")int u_id);
+
+    void addMusic(@Param("v_id")int v_id,@Param("filename") String filename);
+
+    void finshVideo(int v_id);
 }
 

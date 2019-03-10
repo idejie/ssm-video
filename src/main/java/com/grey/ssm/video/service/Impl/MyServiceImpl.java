@@ -71,4 +71,14 @@ public class MyServiceImpl implements MyService {
     public void addRes(int v_id, String pic, String subtitle, String start_time, String end_time) {
         myDao.addRes(v_id,pic,subtitle,"{\"start_time\":\""+start_time+"\", \"end_time\":\""+end_time+"\"}");
     }
+
+    @Override
+    public void addMusic(int v_id, String filename) {
+        myDao.addMusic(v_id,filename);
+    }
+
+    @Override
+    public void finishVideo(int v_id) {
+//        myDao.finshVideo(v_id);
+    }
 }
