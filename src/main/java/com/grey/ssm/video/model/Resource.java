@@ -5,7 +5,7 @@ public class Resource {
     private int v_id;
     private String pic_url;
     private String subtitle;
-    private String style;
+    private int duration;
 
     public int getR_id() {
         return r_id;
@@ -39,12 +39,13 @@ public class Resource {
         this.subtitle = subtitle;
     }
 
-    public String getStyle() {
-        return style;
+
+    public int getDuration() {
+        return duration;
     }
 
-    public void setStyle(String style) {
-        this.style = style;
+    public void setDuration(int duration) {
+        this.duration = duration;
     }
 
     public String toJSON() {
@@ -53,7 +54,7 @@ public class Resource {
                 "\"v_id\":\'" + v_id +"\',"+
                 "\"pic_url\":\'" + pic_url +"\',"+
                 "\"subtitle\":\'" + subtitle +"\',"+
-                "\"style\":\'" + style +"\',"+
+                "\"duration\":\'" + duration +"\',"+
                 "}";
     }
 }

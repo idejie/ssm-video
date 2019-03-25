@@ -68,8 +68,8 @@ public class MyServiceImpl implements MyService {
     }
 
     @Override
-    public void addRes(int v_id, String pic, String subtitle, String start_time, String end_time) {
-        myDao.addRes(v_id,pic,subtitle,"{\"start_time\":\""+start_time+"\", \"end_time\":\""+end_time+"\"}");
+    public void addRes(int v_id, String pic, String subtitle, int duration) {
+        myDao.addRes(v_id,pic,subtitle,duration);
     }
 
     @Override
@@ -80,5 +80,16 @@ public class MyServiceImpl implements MyService {
     @Override
     public void finishVideo(int v_id) {
 //        myDao.finshVideo(v_id);
+    }
+
+    @Override
+    public Resource getARes(int r_id) {
+        return myDao.getResource(r_id);
+    }
+
+    @Override
+    public void delRes(int r_id) {
+        myDao.delRes(r_id);
+
     }
 }
