@@ -10,6 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="./assets/img/logo-fav.png">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="/assets/lib/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
     <link rel="stylesheet" type="text/css"
           href="/assets/lib/material-design-icons/css/material-design-iconic-font.min.css"/>
@@ -44,6 +45,22 @@
             </div>
         </div>
     </nav>
+    <script type="text/javascript">
+        $(function(){
+            $("#phone-style").click(function(){
+
+                $("#qxd-sel").hide();
+                // $("#EleId").style.display="inline";
+                // alert("sss");
+            });
+            $("#pc-style").click(function(){
+
+                $("#qxd-sel").show();
+                // $("#EleId").style.display="inline";
+                // alert("sss");
+            });
+        });
+    </script>
     <div class="be-content">
 
         <div class="main-content container-fluid">
@@ -55,18 +72,18 @@
                         <div class="card-body">
                             <form action="/download/${video.v_id}" style="border-radius: 0px;" method="post">
                                 <div class="form-group row pt-1">
-                                    <label class="col-12 col-sm-3 col-form-label text-sm-right">视频央视</label>
+                                    <label class="col-12 col-sm-3 col-form-label text-sm-right">视频样式</label>
                                     <div class="col-12 col-sm-8 col-lg-6 form-check mt-2">
                                         <label class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" name="style" checked="" class="custom-control-input" value="1"><span class="custom-control-label custom-control-color">手机版</span>
+                                            <input type="radio" name="style"  class="custom-control-input" value="1"  id="phone-style" ><span class="custom-control-label custom-control-color">手机版</span>
                                         </label>
                                         <label class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" name="style" class="custom-control-input" value="2"><span class="custom-control-label custom-control-color"> 电脑版</span>
+                                            <input type="radio" name="style" checked="" class="custom-control-input" value="2" id="pc-style"><span class="custom-control-label custom-control-color"> 电脑版</span>
                                         </label>
                                     </div>
                                 </div>
 
-                                <div class="form-group row pt-1 pb-1">
+                                <div class="form-group row pt-1 pb-1" id ="qxd-sel">
                                     <label class="col-12 col-sm-3 col-form-label text-sm-right">清晰度</label>
                                     <div class="col-12 col-sm-8 col-lg-6 form-check mt-2">
                                         <label class="custom-control custom-radio custom-control-inline">

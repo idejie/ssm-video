@@ -37,6 +37,9 @@ public class DoGET {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        for(String i :ret){
+            System.out.println(i);
+        }
         return ret;
     }
 }

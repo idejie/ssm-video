@@ -16,7 +16,7 @@ public class Constants {
             "PlayResY:720\n" +
             "[V4+ Styles]\n" +
             "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\n" +
-            "Style: Default,微软雅黑,30,&H00DEDEDE,&HF0000000,&H00111211,&H00000000,0,0,0,0,100,100,0,0,1,1.5,1,2,5,5,5,134\n" +
+            "Style: Default,微软雅黑,20,&H00DEDEDE,&HF0000000,&H00111211,&H00000000,0,0,0,0,100,100,0,0,1,1.5,1,2,5,5,5,134\n" +
             "[Events]\n" +
             "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text";
 }

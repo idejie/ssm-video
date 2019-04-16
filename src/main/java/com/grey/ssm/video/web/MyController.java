@@ -349,9 +349,12 @@ public class MyController {
 
 
         String keyword = req.getParameter("keyword");
+        String fbl = req.getParameter("fbl");
+
         Video v = myService.getVideo(v_id);
 
-        String url = "http://image.so.com/j?q=" + keyword + "&src=srp&pn=100";
+        String url = "http://image.so.com/j?q=" + keyword + "&src=srp&pn=100"+fbl;
+        System.out.println("###########"+url);
         List<String> pics = DoGET.getPic(url);
         req.setAttribute("video", v);
         req.setAttribute("user", myService.getUserByID(v.getU_id()));
@@ -599,20 +602,59 @@ public class MyController {
         User u = myService.getUserByID(v.getU_id());
         int style = Integer.parseInt(req.getParameter("style")); //1:phone 2:pc
         int qxd  = Integer.parseInt(req.getParameter("qxd")); //1：超清 2：高清 3. 标清
-        String []sizes =  new String[]{"1280x720","720x480","480x360"};
+        String []sizes1 =  new String[]{"1280x720","720x480","480x360"};
+        String size2 = "540x960";
         req.setAttribute("user", u);
         req.setAttribute("video", v);
         List<Resource> resources = myService.getRes(v_id);
         String fileName = "res/";
-
-
-
+        String stedar ="";
+        if(style==1){
+            stedar="9:16";
+        }else{
+            switch (qxd){
+                case 1:
+                    stedar="16:9";
+                    break;
+                case 2:
+                    stedar="3:2";
+                    break;
+                case 3:
+                    stedar="4:3";
+                    break;
+            }
+        }
+//        stedar="16/9:1";
         //制作视频
         //-f concat -safe 0
         int sum=0;
         for (Resource r : resources) {
             sum+=r.getDuration();
         }
+        String size;
+        if(style==1) {
+            size = size2;
+        }else {
+            size = sizes1[qxd - 1];
+        }
+        String []s = size.split("x");
+        System.out.println("###############"+s[0]+":"+s[1]);
+//        List<String> cmd_audio = new ArrayList<String>();
+//        cmd_audio.add(Constants.ffmpeg);
+//        cmd_audio.add("-i");
+//        cmd_audio.add(Constants.path + "/" + v_id+".mp3");
+//        cmd_audio.add("-vn");
+//        cmd_audio.add("-acodec");
+//        cmd_audio.add("copy");
+//        cmd_audio.add("-ss");
+//        cmd_audio.add("00:00:00");
+//        cmd_audio.add("-t");
+//        String du = "00:0"+(sum/60)+":"+(sum%60);
+//        System.out.println(du);
+//        cmd_audio.add(du);
+//        cmd_audio.add("-y");
+//        cmd_audio.add(Constants.path + "/" + v_id+"_t.mp3");
+//        exc_cmd(cmd_audio);
         List<String> command = new ArrayList<String>();
         command.add(Constants.ffmpeg);
         command.add("-f");
@@ -623,10 +665,17 @@ public class MyController {
         command.add(Constants.path + "/" + v_id + "-input.txt");
         command.add("-i");
         command.add(Constants.path + "/" + v_id+".mp3");
+        command.add("-vf");
+        command.add("scale="+s[0]+":"+s[1]+",setsar=1:1");
         command.add("-t");
         command.add(""+sum);
-        command.add("-s");
-        command.add(sizes[qxd-1]);
+        if(style==1||qxd==1){
+            command.add("-r");
+            command.add("25");
+            command.add("-b:v");
+            command.add("1500k");
+        }
+
         command.add(Constants.path + "/" + v_id + "null.mp4");
         command.add("-y");
         exc_cmd(command);
@@ -634,27 +683,43 @@ public class MyController {
         //添加台词
         List<String> command2 = new ArrayList<String>();
         command2.add(Constants.ffmpeg);
-        command2.add("-y");
         command2.add("-i");
         command2.add(Constants.path + "/" + v_id + "null.mp4");
+//        command2.add("-vf");
+//        command2.add("scale="+s[0]+":"+s[1]+",setdar="+stedar);
+        command2.add("-y");
+        command2.add("-strict");
+        command2.add("-2");
+
+//        command2.add(""+sum);
         command2.add("-vf");
         command2.add("subtitles="+Constants.path + "/" + v_id +"-sub.ass");
-        command2.add(Constants.path + "/" + v_id + "pc.mp4");
+        command2.add(Constants.path + "/" + v_id + "pc_t.mp4");
         exc_cmd(command2);
         System.out.println("已经添加台词");
+        List<String> command4 = new ArrayList<>();
+        command4.add(Constants.ffmpeg);
+        command4.add("-i");
+        command4.add(Constants.path + "/" + v_id + "pc_t.mp4");
 
+        command4.add("-strict");
+        command4.add("-2");
+        command4.add("-y");
+        command4.add(Constants.path + "/" + v_id + "pc.mp4");
+        exc_cmd(command4);
         String filename="res/"+v_id+"pc.mp4";
         if(style==1){
-            String []size = sizes[qxd-1].split("x");
+            String []size3 = size2.split("x");
             //转9：16
             List<String> command3 = new ArrayList<String>();
             command3.add(Constants.ffmpeg);
             command3.add("-i");
             command3.add(Constants.path + "/" + v_id + "pc.mp4");
+//            command3.add("-vf");
+//            command3.add("scale="+s[0]+":"+s[0]+",setsar=1:1");
+//            command3.add("-vf");
+//            command3.add("scale="+s[0]+":"+s[1]+",setdar="+stedar);
             command3.add("-y");
-            command3.add("-lavfi");
-            String p_tran = "[0:v]scale="+size[0]+"/"+size[1]+"*iw:"+size[0]+"/"+size[1]+"*ih,boxblur=luma_radius=min(h\\,w)/40:luma_power=3:chroma_radius=min(cw\\,ch)/40:chroma_power=1[bg];[bg][0:v]overlay=(W-w)/2:(H-h)/2,setsar=1,crop=w=iw*"+size[1]+"/"+size[0];
-            command3.add(p_tran);
             command3.add(Constants.path + "/" + v_id + "phone.mp4");
             exc_cmd(command3);
             System.out.println("转换成手机版了");

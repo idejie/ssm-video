@@ -128,6 +128,17 @@
                                                 <input id="keyword" type="text" placeholder="Keyword" autocomplete="off"
                                                        class="form-control" name="keyword">
                                             </div>
+                                            <div class="form-group">
+                                                <div class="col-12 col-sm-8 col-lg-6">
+                                                    <select class="form-control" id="fbl" name="fbl">
+                                                        <option value="" selected="">所有分辨率</option>
+                                                        <option value="&width=1280&height=720" >1280x720</option>
+                                                        <option value="&width=720&height=480">720x480</option>
+                                                        <option value="&width=480&height=360">480x360</option>
+                                                        <option value="&width=540&height=960">540x960</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                             <div class="form-group login-submit">
                                                 <button data-dismiss="modal" type="submit"
                                                         class="btn btn-primary btn-xl">搜索
