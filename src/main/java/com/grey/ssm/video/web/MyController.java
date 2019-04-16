@@ -657,6 +657,8 @@ public class MyController {
 //        exc_cmd(cmd_audio);
         List<String> command = new ArrayList<String>();
         command.add(Constants.ffmpeg);
+        command.add("-threads");
+        command.add("2");
         command.add("-f");
         command.add("concat");
         command.add("-safe");
@@ -675,7 +677,8 @@ public class MyController {
             command.add("-b:v");
             command.add("1500k");
         }
-
+        command.add("-threads");
+        command.add("2");
         command.add(Constants.path + "/" + v_id + "null.mp4");
         command.add("-y");
         exc_cmd(command);
@@ -683,43 +686,32 @@ public class MyController {
         //添加台词
         List<String> command2 = new ArrayList<String>();
         command2.add(Constants.ffmpeg);
+        command2.add("-threads");
+        command2.add("2");
         command2.add("-i");
         command2.add(Constants.path + "/" + v_id + "null.mp4");
-//        command2.add("-vf");
-//        command2.add("scale="+s[0]+":"+s[1]+",setdar="+stedar);
         command2.add("-y");
         command2.add("-strict");
         command2.add("-2");
-
-//        command2.add(""+sum);
         command2.add("-vf");
         command2.add("subtitles="+Constants.path + "/" + v_id +"-sub.ass");
-        command2.add(Constants.path + "/" + v_id + "pc_t.mp4");
+        command2.add("-threads");
+        command2.add("2");
+        command2.add(Constants.path + "/" + v_id + "pc.mp4");
         exc_cmd(command2);
         System.out.println("已经添加台词");
-        List<String> command4 = new ArrayList<>();
-        command4.add(Constants.ffmpeg);
-        command4.add("-i");
-        command4.add(Constants.path + "/" + v_id + "pc_t.mp4");
-
-        command4.add("-strict");
-        command4.add("-2");
-        command4.add("-y");
-        command4.add(Constants.path + "/" + v_id + "pc.mp4");
-        exc_cmd(command4);
         String filename="res/"+v_id+"pc.mp4";
         if(style==1){
             String []size3 = size2.split("x");
-            //转9：16
             List<String> command3 = new ArrayList<String>();
             command3.add(Constants.ffmpeg);
+            command3.add("-threads");
+            command3.add("2");
             command3.add("-i");
             command3.add(Constants.path + "/" + v_id + "pc.mp4");
-//            command3.add("-vf");
-//            command3.add("scale="+s[0]+":"+s[0]+",setsar=1:1");
-//            command3.add("-vf");
-//            command3.add("scale="+s[0]+":"+s[1]+",setdar="+stedar);
             command3.add("-y");
+            command3.add("-threads");
+            command3.add("2");
             command3.add(Constants.path + "/" + v_id + "phone.mp4");
             exc_cmd(command3);
             System.out.println("转换成手机版了");
